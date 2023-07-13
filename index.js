@@ -4,8 +4,8 @@ function hasTargetSum(array, target) {
 
   for (let num of array) {
     //n steps
-    const complement = target - num ;
-    if(complements.has(complement)){
+    const complement = target - num;
+    if (complements.has(complement)) {
       return true;
     }
     //1 step
