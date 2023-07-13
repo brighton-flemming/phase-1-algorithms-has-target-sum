@@ -19,7 +19,12 @@ function hasTargetSum(array, target) {
 
 
 Pseudocode:
-1. 
+1. Create an empty set called 'complements'.
+2.For each Number(num) in the array:
+  3. Calculate the 'complement' by subtracting it from the 'target' (target - num).
+  4. If the 'complement' is found in the 'complements' set, return true.
+  5. If 'complement' is not found in 'complements' set, Number(num) is added to 'complements' set.
+6. Return false.
 
 /*
   Add written explanation of your solution here
@@ -27,7 +32,6 @@ Pseudocode:
 
 // You can run `node index.js` to view these console logs
 if (require.main === module) {
-  // add your own custom tests in here
   console.log ("Expecting: true");
   console.log("=>", hasTargetSum([-7, 10, 4, 8], 3));
 
