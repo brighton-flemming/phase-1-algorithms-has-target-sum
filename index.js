@@ -17,9 +17,9 @@ function hasTargetSum(array, target) {
 
 //The Big O time complexity of the function hasTargetSum is O(n).
 
-/* 
-  Add your pseudocode here
-*/
+
+Pseudocode:
+1. 
 
 /*
   Add written explanation of your solution here
@@ -28,6 +28,9 @@ function hasTargetSum(array, target) {
 // You can run `node index.js` to view these console logs
 if (require.main === module) {
   // add your own custom tests in here
+  console.log ("Expecting: true");
+  console.log("=>", hasTargetSum([-7, 10, 4, 8], 3));
+
   console.log("Expecting: true");
   console.log("=>", hasTargetSum([3, 8, 12, 4, 11, 7], 10));
 
