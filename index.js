@@ -37,6 +37,9 @@ if (require.main === module) {
   console.log ("Expecting: true");
   console.log("=>", hasTargetSum([2, 2, 3, 3], 4));
 
+  console.log("Expecting: false");
+  console.log("=>", hasTargetSum([4], 4));
+
 
   console.log("Expecting: true");
   console.log("=>", hasTargetSum([3, 8, 12, 4, 11, 7], 10));
