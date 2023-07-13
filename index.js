@@ -1,15 +1,18 @@
 function hasTargetSum(array, target) {
+  //1 step
   const complements = new Set();
 
   for (let num of array) {
+    //n steps
     const complement = target - num ;
     if(complements.has(complement)){
       return true;
     }
+    //1 step
     complements.add(num);
   }
+  //1 step
   return false;
-  // Write your algorithm here
 }
 
 /* 
